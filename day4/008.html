@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            /* 요소들의 기본 마진이나 패딩을 날려보자(reset)
+               전체선택자(universal selector) */
+           *{margin: 0;padding: 0;}
+            ul {list-style: none;}
+            li {
+                display: inline-block;
+                background-color: cornflowerblue;
+                width: 80px;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                display: block;
+            }
+            li:hover {
+                background-color: blueviolet;
+                font-weight: bold;
+                text-decoration: underline;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Us</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </body>
+</html>

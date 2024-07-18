@@ -1,0 +1,44 @@
+<html>
+    <head>
+       <style>
+        table {width: 680px; margin: auto;}
+        table, td, th {border: 1px solid #aaa;}
+        table, td, th {border-collapse: collapse;}
+        /* 선택자 : html 요소를 선택하는 방법
+                                             우선순위
+            1. 태그 선택자 : 태그를 선택         1개
+            2. 클래스 선택자 : 여러개를 선택     10개
+            3. 아이디 선택자 : 1개를 선택       100개   */    
+            .first-row, .second-row {width: 50%;}
+            tbody>tr:last-of-type {color: blue;}
+            
+       </style>
+    </head>
+    <body>
+        <!-- 강수량이 서울이 150, 인천 130, 경기 200, 강원 150 -->
+         <table>
+           <thead>
+            <tr>
+                <th class="first-row">지역</th><th class="second-row">강수량</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <td>서울</td><td>150</td>
+            </tr>
+            <tr>
+                <td>인천</td><td>130</td>
+            </tr>
+            <tr>
+                <td>경기</td><td>200</td>
+            </tr>
+            <tr>
+                <td>강원</td><td>150</td>
+            </tr>
+            <tr>
+                <td>평균 강수량</td><td>157.5</td>
+            </tr>
+           </tbody>
+         </table>
+    </body>
+</html>
